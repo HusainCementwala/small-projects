@@ -4,8 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Counter</title>
+  <link rel="stylesheet" href="char.css">
 </head>
 <body>
-  
+
+  <div class="container">
+    <h2>Real-time Character Counter</h2>
+   <p class="set-max-para">
+    <label for="max-length">Set Maximum Length:</label>
+    <input type="number" id="max-length" min="1" value="50">
+   <button id="set-length-btn">Yes Beyotch</button>
+    </p>
+    <textarea id="textarea" class="textarea" placeholder="Please write your text here...."
+    maxlength="50"></textarea>
+
+    <div class="counter-container">
+      <p>Total Characters:<span class="total-counter" id="total-counter">0</span></p>
+      <p>Remaining:<span class="remaining-counter" id="remaining-counter">50</span></p>
+    </div>
+  </div>
 </body>
+
+<script src="char.js"></script>
 </html>

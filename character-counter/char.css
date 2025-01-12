@@ -1,0 +1,69 @@
+body{
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: monospace;
+}
+
+.container{
+
+  background-color: lightpink;
+  width: 420px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+
+}
+
+h2{
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.textarea{
+
+  resize: none;
+  width:100% ;
+  height: 100px;
+  font-size: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 2px grey;
+  
+}
+
+
+.counter-container{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  
+ 
+}
+
+.counter-container p{
+
+  font-size: 20px;
+  color: darkblue;
+}
+
+/*to target only the numbers we style the spans - look at the san class in html*/
+
+.total-counter{
+ 
+  font-weight: bold;
+  color: rgb(4, 82, 4);
+}
+
+.remaining-counter{
+ 
+  font-weight: bold;
+  color: rgb(248, 40, 33);
+}
