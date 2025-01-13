@@ -7,13 +7,13 @@ const nextEl = document.getElementById("next");
 let x=0;
 
 prevEl.addEventListener("click",()=>{
-x = x + 45;
+x = x + 36;
 updateGallery();
 });
 
 
 nextEl.addEventListener("click",()=>{
-x = x - 45; //changing slanting
+x = x - 36; //changing slanting
 updateGallery();
 });
 

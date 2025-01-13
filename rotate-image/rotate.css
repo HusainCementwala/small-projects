@@ -27,7 +27,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  transform: rotateY(calc(var(--i)*45deg)) translateZ(
+  transform: rotateY(calc(var(--i)*36deg)) translateZ(
     400px
   );
 
