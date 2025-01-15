@@ -1,0 +1,69 @@
+body{
+
+  margin: 0;
+  padding: 0;
+  background-color: #041C32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+}
+
+
+.title{
+
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-size: 70px;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #ECB365;
+}
+
+
+.section{
+  
+  text-align: center;
+  margin: 0;
+  
+}
+
+.btn{
+
+ font-size: 3rem;
+ border: none;
+ margin-top: 0;
+  padding: 30px;
+ border-radius: 8px;
+ background-color: #2db0c2;
+ color: #ffffff;
+ filter: grayscale();
+ transition: filter 0.2s ease-in-out;
+ cursor: pointer;
+}
+
+.btn:hover{
+ filter: grayscale(0);
+  background-color: #ffffff;
+  color: #2db0c2;
+}
+
+.btn:active{
+
+  background-color: #041C32;
+
+}
+
+
+.para{
+
+  color:#ECB365;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 30px;
+}
+
