@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Subscription</title>
+  <link rel="stylesheet" href="email.css">
+</head>
+<body>
+  <div class="hero">
+    <h3>Coming Soon!</h3>
+    <h1>Our Brand New<br>Website is on It's Way!</h1>
+    <p><span>Subscribe,</span> for latest updates.</p>
+
+    <form name="submit-to-google-sheet" action="">
+
+      <input type="email" name="Email" placeholder="Your email..." required class="input">
+
+    <button type="submit"><img src="send-icon.png" alt="" width="30">
+    </button>
+
+  </form>
+
+    <span id="message" class="message"></span>
+  </div>
+</body>
+
+
+
+
+<script>
+
+  //In this project i am also using a google sheet to save everytime one enters an email id and clicks send 
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwLGP3qqeX8lc13JLGpO5mR3QaARh0HtBkPb3IObekv463ZRb3HPaPC6c0c4_XEpDI5/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("message");
+  const inputField = document.querySelector(".input");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+
+msg.innerHTML = "Thank you for Subscribing!"
+        setTimeout(()=>{
+
+          msg.innerHTML = ""
+        },2000)
+
+        form.reset()
+    
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</html>
